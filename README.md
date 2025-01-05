@@ -1,0 +1,1 @@
+# macos-terminal-theme-sync
