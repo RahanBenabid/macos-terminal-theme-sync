@@ -18,10 +18,16 @@ curl -o ~/Library/Scripts/ThemeWatcher.swift https://raw.githubusercontent.com/R
 swiftc ~/Library/Scripts/ThemeWatcher.swift -o ~/Library/Scripts/ThemeWatcher
 
 launchctl unload ~/Library/LaunchAgents/com.user.terminalpref.plist
-launchctl load ~/Library/LaunchAgents/com.user.terminalpref.plist```
+launchctl load ~/Library/LaunchAgents/com.user.terminalpref.plist
 ```
 
-> The example uses “Homebrew” and “Novel” as light and dark Terminal themes, respectively. You can modify these in the `terminal-theme.applescript`  file found in your ` ~/Library/Scripts/` directory by editing lines 6 and 7 to match your preferred themes.
+## IMPORTANT
+
+- The example uses “Homebrew” and “Novel” as light and dark Terminal themes, respectively. You can modify these in the `terminal-theme.applescript`  file found in your ` ~/Library/Scripts/` directory by editing lines 6 and 7 to match your preferred themes.
+
+- You NEED to replace the `$USER` variable in your `~/Library/LaunchAgents/com.user.terminalpref.plist` with your actual username, if you're confused just execute `echo $USER` in your terminal and replace the variable with the output you got
+
+- if you want more themes i recommend getting them from [here](https://github.com/lysyi3m/macos-terminal-themes)
 
 
 #macos #terminal #theme #dark-mode #light-mode #automation #applescript #swift

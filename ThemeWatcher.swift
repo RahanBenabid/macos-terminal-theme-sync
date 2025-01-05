@@ -5,6 +5,13 @@ class AppearanceMonitor: NSObject {
     
     override init() {
         super.init()
+        
+        // make sure the script exists
+        if !FileManager.default.fileExists(atPath: scriptPath) {
+            print("Error: AppleScript file not found at \(scriptPath)")
+            return
+        }
+        
         DistributedNotificationCenter.default().addObserver(
             self,
             selector: #selector(appearanceChanged),

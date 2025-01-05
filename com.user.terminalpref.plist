@@ -8,7 +8,7 @@
 	<string>com.user.terminalpref</string>
 	<key>ProgramArguments</key>
 	<array>
-		<string>/Users/RahanBen/Library/Scripts/ThemeWatcher</string>
+		<string>/Users/$USER/Library/Scripts/ThemeWatcher</string>
 	</array>
 	<key>RunAtLoad</key>
 	<true/>
